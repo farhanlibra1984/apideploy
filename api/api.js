@@ -7,7 +7,7 @@ dotenv.config()
 app.use(cors());
 
 app.get('/api/test', (req, res)=>{
-    res.json("hello"+Date.now());
+    res.json({body:"hello"+Date.now()});
 })
 
 
