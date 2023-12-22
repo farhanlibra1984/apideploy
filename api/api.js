@@ -7,9 +7,18 @@ dotenv.config()
 app.use(cors());
 
 app.get('/api/test', (req, res)=>{
-    res.json({body:"hello"+Date.now()});
+    res.json("hello"+Date.now());
 })
 
+app.get('/api/test2', (req, res)=>{
+    res.json("hello farhan"+Date.now());
+})
+
+app.listen(process.env.API_PORT,'localhost', ()=>{
+    console.log("server is running")
+   
+
+});
 
 if(process.env.API_PORT){
     app.listen(process.env.API_PORT);
