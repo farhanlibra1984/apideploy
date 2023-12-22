@@ -11,7 +11,7 @@ app.get('/api/test', (req, res)=>{
 })
 
 app.get('/api/test2', (req, res)=>{
-    res.json("hello farhan"+Date.now());
+    res.json("hello farhan");
 })
 
 app.listen(process.env.API_PORT,'localhost', ()=>{
